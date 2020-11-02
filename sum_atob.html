@@ -14,10 +14,11 @@
     <p id="display"></p>
     <script>
         document.getElementById("sum").addEventListener("click", function () {
-            let noSoMot = document.getElementById("so1").value;
-            let noSoHai = document.getElementById("so2").value
+            let noSoMot = Number(document.getElementById("so1").value);
+            let noSoHai = Number(document.getElementById("so2").value);
             for (let i = noSoMot; i <= noSoHai; i++) {
-                console.log("đã chạy")
+                sum += noSoMot 
+                console.log(sum)
             }
         }
         )
