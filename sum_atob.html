@@ -14,12 +14,15 @@
     <p id="display"></p>
     <script>
         document.getElementById("sum").addEventListener("click", function () {
-            let noSoMot = Number(document.getElementById("so1").value);
-            let noSoHai = Number(document.getElementById("so2").value);
-            for (let i = noSoMot; i <= noSoHai; i++) {
-                sum += noSoMot 
+            let soMot = Number(document.getElementById("so1").value);
+            let soHai = Number(document.getElementById("so2").value);
+            let sum = 0;
+            // đặt sum để có thể tính được bên trong vòng lặp//
+            for (let i = soMot; i <= soHai; i++) {
+                sum += i
                 console.log(sum)
             }
+            document.getElementById("display").innerHTML = "Tổng của các số nguyên từ " + soMot + " tới " + soHai + " là: " + sum 
         }
         )
     </script>
