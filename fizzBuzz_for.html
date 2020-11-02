@@ -17,7 +17,16 @@
             let soMot = Number(document.getElementById("so1").value);
             let soHai = Number(document.getElementById("so2").value);
             for (let count = soMot; count <= soHai; count++) {
-                
+                if (count % 3 == 0) {
+                    if (count % 5 == 0) {
+                        document.getElementById("display").innerHTML += "<br> Fizz BUzzzzzzzzz"
+                    } else {
+                        document.getElementById("display").innerHTML += "<br> FIZZ"
+                    }
+                } else if (count % 5 == 0) {
+                    document.getElementById("display").innerHTML += "<br> Buzz"
+                } else {
+                    document.getElementById("display").innerHTML += "<br>" + count
                 }
             }
         }
