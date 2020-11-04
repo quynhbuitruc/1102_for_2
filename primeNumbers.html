@@ -12,7 +12,32 @@
     <script>
         let N = 2
         for (let count = 0; count < 20; count++) {
-            document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+            let isPrimeNumber = false
+            while (isPrimeNumber !== true) {
+                if (N == 2) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N == 3) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N == 5) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N == 7) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N == 9) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N == 11) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else if (N % 2 !== 0 & N % 3 !== 0 & N % 5 !== 0 & N % 7 !== 0 & N % 9 !== 0 & N % 11 !== 0) {
+                    document.getElementById("show").innerHTML += N + " là số nguyên tố <br>"
+                    isPrimeNumber = true
+                } else {
+                    isPrimeNumber = false
+                }
                 N++
             }
         }
